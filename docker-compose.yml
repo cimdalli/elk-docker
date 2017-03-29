@@ -12,3 +12,6 @@ elk:
     - "5601:5601"
     - "9200:9200"
     - "5044:5044"
+  environment:
+    - ES_JAVA_OPTS=-Xmx2g -Xms1g
+    - LS_HEAP_SIZE=2048m
